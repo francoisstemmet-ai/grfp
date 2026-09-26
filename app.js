@@ -84,30 +84,4 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.fade-in-up').forEach(element => {
     observer.observe(element);
   });
-
-  // 5. Contact Form Submission Handler
-  const contactForm = document.getElementById('contactForm');
-  const formNotification = document.getElementById('formNotification');
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      const name = document.getElementById('name').value;
-      const channel = document.getElementById('channel').value;
-
-      if (formNotification) {
-        formNotification.innerHTML = `<strong>Thank you, ${name}!</strong> Your request for direct principal engagement regarding <em>${channel || 'trade operations'}</em> has been logged. Marco Paioni will review your route parameters directly.`;
-        formNotification.style.display = 'block';
-      }
-
-      contactForm.reset();
-      
-      setTimeout(() => {
-        if (formNotification) {
-          formNotification.style.display = 'none';
-        }
-      }, 8000);
-    });
-  }
 });
