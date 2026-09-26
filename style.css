@@ -855,6 +855,58 @@ textarea.form-control {
   gap: 1rem;
 }
 
+.footer-contact-details {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.footer-contact-details a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(229, 57, 53, 0.15);
+  color: var(--text-main);
+  font-size: 1.15rem;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.footer-contact-details a:hover {
+  background: var(--grfp-red);
+  color: #fff;
+  transform: translateY(-2px);
+  border-color: var(--grfp-red);
+}
+
+.footer-contact-text {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.92rem;
+}
+
+.footer-contact-text span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-muted);
+}
+
+.footer-contact-text a {
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.footer-contact-text a:hover {
+  color: var(--grfp-red-bright);
+}
+
 /* Scroll Animations */
 .fade-in-up {
   opacity: 0;
