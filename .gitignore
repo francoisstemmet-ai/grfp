@@ -1,0 +1,20 @@
+# Tooling / agent workspaces - never deploy these
+.kilo/
+.agent/
+.agents/
+.claude/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
